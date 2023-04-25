@@ -16,6 +16,7 @@
 		AB66AEBF29F84E2700869E79 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66AEBE29F84E2600869E79 /* HomeViewModel.swift */; };
 		AB66AEC629F853F500869E79 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66AEC529F853F500869E79 /* HomeView.swift */; };
 		AB66AEC929F8581D00869E79 /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66AEC829F8581D00869E79 /* Builders.swift */; };
+		AB66AECC29F8633300869E79 /* HomeViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66AECB29F8633300869E79 /* HomeViewContracts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AB66AEBE29F84E2600869E79 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		AB66AEC529F853F500869E79 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AB66AEC829F8581D00869E79 /* Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builders.swift; sourceTree = "<group>"; };
+		AB66AECB29F8633300869E79 /* HomeViewContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewContracts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		AB66AEA329F848AA00869E79 /* barn */ = {
 			isa = PBXGroup;
 			children = (
+				AB66AECA29F8631600869E79 /* Contracts */,
 				AB66AEC729F857A200869E79 /* Builders */,
 				AB66AEC429F853E100869E79 /* View */,
 				AB66AEBB29F84CD600869E79 /* Controller */,
@@ -106,6 +109,14 @@
 				AB66AEC829F8581D00869E79 /* Builders.swift */,
 			);
 			path = Builders;
+			sourceTree = "<group>";
+		};
+		AB66AECA29F8631600869E79 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				AB66AECB29F8633300869E79 /* HomeViewContracts.swift */,
+			);
+			path = Contracts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				AB66AEC629F853F500869E79 /* HomeView.swift in Sources */,
 				AB66AEBF29F84E2700869E79 /* HomeViewModel.swift in Sources */,
 				AB66AEBD29F84CE600869E79 /* HomeViewController.swift in Sources */,
+				AB66AECC29F8633300869E79 /* HomeViewContracts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

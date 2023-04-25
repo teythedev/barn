@@ -8,10 +8,9 @@
 import Foundation
 
 extension HomeViewController {
-    static func make() -> HomeViewController {
+    static func make(with viewModel: HomeViewModelProtocol) -> HomeViewController {
         let homeViewController = HomeViewController()
-        let homeViewModel = HomeViewModel()
-        homeViewController.delegate = homeViewModel
+        homeViewController.viewModel = viewModel
         return homeViewController
     }
 }

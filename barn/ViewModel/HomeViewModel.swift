@@ -7,21 +7,30 @@
 
 import Foundation
 
-protocol HomeViewDelegate : AnyObject{
-    func fetchCurrentUser()
-}
 
 
-final class HomeViewModel: HomeViewDelegate {
-    
-    private var isUserLoggedIn = false
-    
-    func fetchCurrentUser() {
+final class HomeViewModel: HomeViewModelProtocol {
+    func fetchCurrentUser(completion: @escaping (Bool) -> ()) {
         if isUserLoggedIn {
             print("Current User is: Bla")
         } else {
             print("User not logged In")
+            let vc = ViewController()
+            vc.view.backgroundColor = .red
+            vc.modalPresentationStyle = .fullScreen
+            completion(false)
+            //delegate?.handleViewModelOutput(.gotoLoginPage(vc))
         }
     }
+    
+    func fetchCurrentUser(completion: @escaping () -> ()) {
+       
+    }
+    
+    var delegate: HomeViewModelDelegate?
+    
+    private var isUserLoggedIn = false
+    
+
     
 }

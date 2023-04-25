@@ -8,20 +8,33 @@
 import UIKit
 
 
-final class HomeViewController: UIViewController {
 
-    weak var delegate: HomeViewDelegate?
+final class HomeViewController: UIViewController, HomeViewModelDelegate {
+    func handleViewModelOutput(_ output: HomeViewModelOutput) {
+        switch output {
+        case .gotoLoginPage(let viewController):
+            present(viewController, animated: true)
+        }
+    }
     
-    
+    var viewModel: HomeViewModelProtocol?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view = HomeView(frame: view.frame)
-        delegate?.fetchCurrentUser()
+        viewModel?.delegate = self
+        
+    }
+    override func viewDidLayoutSubviews() {
+        viewModel?.fetchCurrentUser(completion: {[weak self] result in
+            if !result {
+                self?.present(ViewController(), animated: true)
+            }
+        })
     }
     
-    
-    
-    
-
+   
 }
+
+
