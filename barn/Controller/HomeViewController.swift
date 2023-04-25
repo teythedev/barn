@@ -7,17 +7,21 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+
+final class HomeViewController: UIViewController {
 
     weak var delegate: HomeViewDelegate?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view = HomeView(frame: view.frame)
-        
         delegate?.fetchCurrentUser()
     }
+    
+    
+    
     
 
 }

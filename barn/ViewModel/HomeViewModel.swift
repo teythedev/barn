@@ -10,6 +10,8 @@ import Foundation
 protocol HomeViewDelegate : AnyObject{
     func fetchCurrentUser()
 }
+
+
 final class HomeViewModel: HomeViewDelegate {
     
     private var isUserLoggedIn = false
