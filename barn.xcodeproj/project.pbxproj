@@ -13,6 +13,7 @@
 		AB66AEAE29F848AB00869E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB66AEAD29F848AB00869E79 /* Assets.xcassets */; };
 		AB66AEB129F848AB00869E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB66AEAF29F848AB00869E79 /* LaunchScreen.storyboard */; };
 		AB66AEBD29F84CE600869E79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66AEBC29F84CE600869E79 /* HomeViewController.swift */; };
+		AB66AEBF29F84E2700869E79 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66AEBE29F84E2600869E79 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AB66AEB029F848AB00869E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB66AEB229F848AB00869E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB66AEBC29F84CE600869E79 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AB66AEBE29F84E2600869E79 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		AB66AEB829F849AF00869E79 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AB66AEBE29F84E2600869E79 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				AB66AEA929F848AA00869E79 /* ViewController.swift in Sources */,
 				AB66AEA529F848AA00869E79 /* AppDelegate.swift in Sources */,
 				AB66AEA729F848AA00869E79 /* SceneDelegate.swift in Sources */,
+				AB66AEBF29F84E2700869E79 /* HomeViewModel.swift in Sources */,
 				AB66AEBD29F84CE600869E79 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
