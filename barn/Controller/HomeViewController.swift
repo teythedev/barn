@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         view = HomeView(frame: view.frame)
+        
         delegate?.fetchCurrentUser()
     }
     
