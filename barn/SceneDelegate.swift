@@ -20,7 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = HomeViewController()
+        let homeViewController = HomeViewController()
+        let homeViewModel = HomeViewModel()
+        homeViewController.delegate = homeViewModel
+        window?.rootViewController = homeViewController
         window?.makeKeyAndVisible()
     }
 

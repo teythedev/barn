@@ -7,6 +7,19 @@
 
 import Foundation
 
-final class HomeViewModel {
+protocol HomeViewDelegate : AnyObject{
+    func fetchCurrentUser()
+}
+final class HomeViewModel: HomeViewDelegate {
+    
+    private var isUserLoggedIn = false
+    
+    func fetchCurrentUser() {
+        if isUserLoggedIn {
+            print("Current User is: Bla")
+        } else {
+            
+        }
+    }
     
 }
