@@ -12,6 +12,7 @@
 		AB66AEA929F848AA00869E79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66AEA829F848AA00869E79 /* ViewController.swift */; };
 		AB66AEAE29F848AB00869E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB66AEAD29F848AB00869E79 /* Assets.xcassets */; };
 		AB66AEB129F848AB00869E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB66AEAF29F848AB00869E79 /* LaunchScreen.storyboard */; };
+		AB66AEBD29F84CE600869E79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66AEBC29F84CE600869E79 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AB66AEAD29F848AB00869E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB66AEB029F848AB00869E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB66AEB229F848AB00869E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB66AEBC29F84CE600869E79 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		AB66AEA329F848AA00869E79 /* barn */ = {
 			isa = PBXGroup;
 			children = (
+				AB66AEBB29F84CD600869E79 /* Controller */,
 				AB66AEBA29F84B7400869E79 /* View */,
 				AB66AEB929F84A6B00869E79 /* Resources */,
 				AB66AEB829F849AF00869E79 /* ViewModel */,
@@ -86,6 +89,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AB66AEBB29F84CD600869E79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB66AEBC29F84CE600869E79 /* HomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 				AB66AEA929F848AA00869E79 /* ViewController.swift in Sources */,
 				AB66AEA529F848AA00869E79 /* AppDelegate.swift in Sources */,
 				AB66AEA729F848AA00869E79 /* SceneDelegate.swift in Sources */,
+				AB66AEBD29F84CE600869E79 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
