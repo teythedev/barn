@@ -18,7 +18,7 @@ final class HomeViewModel: HomeViewDelegate {
         if isUserLoggedIn {
             print("Current User is: Bla")
         } else {
-            
+            print("User not logged In")
         }
     }
     
